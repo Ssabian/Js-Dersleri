@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var Mercedes = {
+	color:'white',
+	prise: 2000,
+	model: 'benz'
+}
+
+var Ferrari = {
+	color:'red',
+	prise: 3000
+}
+Ferrari.__proto__ = Mercedes;
+
+console.log(Ferrari.prise);
+
+
+</script>
+</body>
+</html>
