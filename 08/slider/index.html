@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div></div>
+<script>
+var images=["images/img1.jpg","images/img2.jpg","images/img3.jpeg","images/img4.jpg"]
+i=0;
+function slider(){
+	document.write("<button onclick='slider()' style='z-index:3; position:absolute; top:300px; padding:10px 20px; margin-left:150px'>next</button>")
+	document.write("<button onclick='sliderTwo()' style='margin-left:1100px; position:absolute; top:300px; padding:10px 20px; margin-right:0'>next</button>")
+	document.write("<div style='width:500px;background-attachment:cover; margin:0 auto;'><img style='width:500px;' src="+images[i]+"></div>");
+	document.close();
+		if(i<3){
+			i++;
+		}else{
+			i=0;
+		}
+}
+slider();
+
+function sliderTwo(){
+	document.write("<button onclick='slider()' style='z-index:3; position:absolute; top:300px; padding:10px 20px; margin-left:150px'>next</button>")
+	document.write("<button onclick='sliderTwo()' style='margin-left:1100px; position:absolute; top:300px; padding:10px 20px; margin-right:0'>next</button>")
+	document.write("<div style='width:500px;background-attachment:cover; z-index:3; margin:0 auto;'><img style='width:500px;' src="+images[i]+"></div>");
+		document.close();
+		
+		if(i<3){
+			i++;
+		}else{
+		i=3	
+		}
+}
+sliderTwo()
+
+
+
+
+   
+	</script>
+</body>
+</html>
