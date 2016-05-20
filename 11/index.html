@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Java sctipt</title>
+	<style type="text/css">
+     /*напишем значени классов на css*/
+     /*.first{
+     	height: 200px;
+     	width: 300px;
+     	background-color: red;
+     }
+     .second{
+     	height: 200px;
+     	width: 300px;
+     	background-color: yellow;
+     }
+     .third{
+     	height: 200px;
+     	width: 300px;
+     	background-color: green;
+     }*/
+
+     .myDiv{
+          width: 1000px;
+          height: 500px;
+          background-color: yellow;
+     }
+     </style>
+</head>
+<body>
+<!-- напишем наши div -->
+
+<!-- <div class="first" id="purple"></div>
+<div class="second" id="orange"></div>
+<div class="third" id="violet"></div> -->
+<script>
+// при помощи getElementById соединим наши html и js
+// значению id передаем к getElementById + innerHTML,получаем =>
+
+     // document.getElementById("purple").innerHTML="Sabina get up";
+
+     // document.getElementById("purple").style.backgroundColor = "blue";
+
+
+                             // Crerat element / DOME
+                             // ********************
+
+
+var myDiv=document.createElement('div');
+myDiv.SetAttribute("class","myDiv");
+document.body.appenChild(myDiv);
+
+</script>
+
+</body>
+</html>
